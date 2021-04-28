@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Woo Sah</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="themes/Woosah.css" />
-    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"
     />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="themes/Woosah.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="simpleplaylist.css" type="text/css" />
 
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"
+    ></script>
+    <script src="jquery.simpleplaylist.js"></script>
   </head>
   <body>
     <!--PAGE 1 WooSah -->
@@ -41,11 +48,61 @@
     <!--PAGE 2 Meditation-->
     <section id="secondpage" data-role="page" data-theme="b">
       <div data-role="header">
-        <h1>Woo Sah</h1
+        <h1>Woo Sah</h1>
         <h1>Meditation</h1>
       </div>
 
-      <div data-role="main" class="ui-content"></div>
+      <div data-role="main" class="ui-content">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $(".playlist").playlist();
+          });
+        </script>
+
+        <h1>Simple HTML5 Audio Playlist Demo</h1>
+
+        <ul class="playlist">
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Flu Gi — Mum</span>
+              <span class="minus">-</span>
+              <span id="timeleft">3:17</span>
+            </div>
+            <audio>
+              <source src="audio/mum.mp3" type="audio/mp3" />
+              <source src="audio/mum.ogg" type="audio/ogg" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Flu Gi — Speed</span>
+              <span class="minus">-</span>
+              <span id="timeleft">2:35</span>
+            </div>
+            <audio>
+              <source src="audio/speed.mp3" type="audio/mp3" />
+              <source src="audio/speed.ogg" type="audio/ogg" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Flu Gi — TOP90 (radio)</span>
+              <span class="minus">-</span>
+              <span id="timeleft">2:50</span>
+            </div>
+            <audio>
+              <source src="audio/top90(radio).mp3" type="audio/mp3" />
+              <source src="audio/top90(radio).ogg" type="audio/ogg" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+        </ul>
+      </div>
 
       <div data-role="footer" data-position="fixed">
         <a href="index.html" data-transition="flip" data-role="button">back</a>
@@ -55,7 +112,7 @@
     <!--PAGE 3 Yoga-->
     <section id="thirdpage" data-role="page" data-theme="c">
       <div data-role="header">
-        <h1>Woo Sah</h1
+        <h1>Woo Sah</h1>
         <h1>Yoga</h1>
       </div>
 

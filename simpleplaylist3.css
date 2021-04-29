@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "Comfortaa-SemiBold";
+  src: url("static/Comfortaa-SemiBold.ttf") format("truetype");
+}
+
 ul.playlist3 {
   width: auto;
   padding: 10px;
-  font-family: "Helvetica", "Arial", "Verdana", sans-serif;
-  font-size: 14px;
+  font-family: "Comfortaa-SemiBold";
+  font-size: 15px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;

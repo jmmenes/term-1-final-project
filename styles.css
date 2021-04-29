@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Comfortaa-Light";
+  src: url("static/Comfortaa-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Comfortaa-Medium";
+  src: url("static/Comfortaa-Medium.ttf") format("truetype");
+}
+
+.woosah {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.refresh {
+  font-family: "Comfortaa-Light";
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.choose {
+  text-align: center;
+  font-family: "Comfortaa-Medium";
+  color: #fff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.meditate {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.yoga {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.relaxation {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h3 {
+  text-align: center;
+  color: #fff;
+  text-shadow: -1px 0 black, 0 -2px black, 1px 0 black, 0 -1px black;
+}
+
+/* Back button padding */
+.back {
+  padding-left: 0.875em;
+}
+
+/* instruction page */
+.thankyou {
+  padding: 1em 1em 0 1em;
+}
+.optimal {
+  text-align: center;
+}

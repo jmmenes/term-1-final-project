@@ -1,4 +1,4 @@
-ul.playlist {
+ul.playlist3 {
   width: auto;
   padding: 10px;
   font-family: "Helvetica", "Arial", "Verdana", sans-serif;
@@ -8,7 +8,7 @@ ul.playlist {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  background: #ff8936;
+  background: #00bb57;
   opacity: 0.8;
 }
 
@@ -56,7 +56,7 @@ span#timeleft {
   width: 20px;
 }
 
-div.progressBar {
+div.progressBar3 {
   width: 100%;
   margin: 3px 0;
   -webkit-border-radius: 3px;
@@ -68,7 +68,7 @@ div.progressBar {
   cursor: pointer;
 }
 
-div.progress {
+div.progress3 {
   width: 0%;
   height: 5px;
   -webkit-border-radius: 3px;
@@ -76,5 +76,5 @@ div.progress {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  background: #de6000;
+  background: #005e32;
 }

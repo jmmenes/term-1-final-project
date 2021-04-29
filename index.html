@@ -1,47 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Woo Sah</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link
-      rel="stylesheet"
-      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"
-    />
+    <!-- jQuery Mobile Themes CSS & JS -->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="themes/Woosah.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="simpleplaylist.css" type="text/css" />
-
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <!-- For jQuery Play List -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"
-    ></script>
+
+    <!-- Index HTML CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- jQuery Music Playlist CSS & JS -->
+    <link rel="stylesheet" href="simpleplaylist.css" type="text/css" />
+    <link rel="stylesheet" href="simpleplaylist2.css" type="text/css" />
+    <link rel="stylesheet" href="simpleplaylist3.css" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="jquery.simpleplaylist.js"></script>
+    <script src="jquery.simpleplaylist2.js"></script>
+    <script src="jquery.simpleplaylist3.js"></script>
   </head>
+
   <body>
-    <!--PAGE 1 WooSah -->
+    <!--PAGE 1 WooSah Page Introduction-->
     <section id="firstpage" data-role="page" data-theme="a">
       <header data-role="header">
         <h1>Woo Sah</h1>
+        <h1>Refresh Your Life</h1>
       </header>
 
       <div data-role="main" class="ui-content">
+        <h1>Choose your activity</h1>
+
         <form>
-          <a href="#secondpage" class="ui-btn ui-corner-all">Meditation</a>
+          <a href="#secondpage" data-transition="slide" class="ui-btn ui-corner-all">Meditation</a>
         </form>
 
         <form>
-          <a href="#thirdpage" class="ui-btn ui-corner-all">Yoga</a>
+          <a href="#thirdpage" data-transition="slide" class="ui-btn ui-corner-all">Yoga</a>
         </form>
 
         <form>
-          <a href="#fourthpage" class="ui-btn ui-corner-all">Relaxation</a>
+          <a href="#fourthpage" data-transition="slide" class="ui-btn ui-corner-all">Relaxation</a>
         </form>
       </div>
     </section>
@@ -60,45 +63,40 @@
           });
         </script>
 
-        <h1>Simple HTML5 Audio Playlist Demo</h1>
-
-        <ul class="playlist">
+        <ul data-role="listview" data-inset="true" class="playlist">
           <li>
             <div class="track">
               <span class="controls" id="playToggle"></span>
-              <span class="title">Flu Gi — Mum</span>
+              <span class="title">An Honest Meditation</span>
               <span class="minus">-</span>
-              <span id="timeleft">3:17</span>
+              <span id="timeleft">2:29</span>
             </div>
             <audio>
-              <source src="audio/mum.mp3" type="audio/mp3" />
-              <source src="audio/mum.ogg" type="audio/ogg" />
+              <source src="audio/honest-meditation.mp3" type="audio/mp3" />
               Your browser does not support the <code>audio</code> element.
             </audio>
           </li>
           <li>
             <div class="track">
               <span class="controls" id="playToggle"></span>
-              <span class="title">Flu Gi — Speed</span>
+              <span class="title">Centered Calming</span>
               <span class="minus">-</span>
-              <span id="timeleft">2:35</span>
+              <span id="timeleft">3:07</span>
             </div>
             <audio>
-              <source src="audio/speed.mp3" type="audio/mp3" />
-              <source src="audio/speed.ogg" type="audio/ogg" />
+              <source src="audio/centered-calming.mp3" type="audio/mp3" />
               Your browser does not support the <code>audio</code> element.
             </audio>
           </li>
           <li>
             <div class="track">
               <span class="controls" id="playToggle"></span>
-              <span class="title">Flu Gi — TOP90 (radio)</span>
+              <span class="title">The Devi Prayer</span>
               <span class="minus">-</span>
-              <span id="timeleft">2:50</span>
+              <span id="timeleft">9:57</span>
             </div>
             <audio>
-              <source src="audio/top90(radio).mp3" type="audio/mp3" />
-              <source src="audio/top90(radio).ogg" type="audio/ogg" />
+              <source src="audio/the-devi-prayer.mp3" type="audio/mp3" />
               Your browser does not support the <code>audio</code> element.
             </audio>
           </li>
@@ -117,6 +115,53 @@
         <h1>Yoga</h1>
       </div>
 
+      <div data-role="main" class="ui-content">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $(".playlist2").playlist2();
+          });
+        </script>
+
+        <ul data-role="listview" data-inset="true" class="playlist2">
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">GTA</span>
+              <span class="minus">-</span>
+              <span id="timeleft">2:52</span>
+            </div>
+            <audio>
+              <source src="audio/gta.mp3" type="audio/mp3" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Vyanah</span>
+              <span class="minus">-</span>
+              <span id="timeleft">3:10</span>
+            </div>
+            <audio>
+              <source src="audio/vyanah.mp3" type="audio/mp3" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Kundalini</span>
+              <span class="minus">-</span>
+              <span id="timeleft">3:21</span>
+            </div>
+            <audio>
+              <source src="audio/kundalini.mp3" type="audio/mp3" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+        </ul>
+      </div>
+
       <div data-role="footer" data-position="fixed">
         <a href="index.html" data-transition="flip" data-role="button">back</a>
       </div>
@@ -127,6 +172,53 @@
       <div data-role="header">
         <h1>Woo Sah</h1>
         <h1>Relaxation</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $(".playlist3").playlist3();
+          });
+        </script>
+
+        <ul data-role="listview" data-inset="true" class="playlist3">
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Slow Down</span>
+              <span class="minus">-</span>
+              <span id="timeleft">6:44</span>
+            </div>
+            <audio>
+              <source src="audio/slow-down.mp3" type="audio/mp3" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Full Sail</span>
+              <span class="minus">-</span>
+              <span id="timeleft">3:22</span>
+            </div>
+            <audio>
+              <source src="audio/full-sail.mp3" type="audio/mp3" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+          <li>
+            <div class="track">
+              <span class="controls" id="playToggle"></span>
+              <span class="title">Sea Breeze</span>
+              <span class="minus">-</span>
+              <span id="timeleft">2:46</span>
+            </div>
+            <audio>
+              <source src="audio/sea-breeze.mp3" type="audio/mp3" />
+              Your browser does not support the <code>audio</code> element.
+            </audio>
+          </li>
+        </ul>
       </div>
 
       <div data-role="footer" data-position="fixed">

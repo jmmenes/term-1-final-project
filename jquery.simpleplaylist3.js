@@ -11,12 +11,12 @@
  * Copyright (c) 2012, Zakhar Day (zakhar.day -[at]- gmail [*dot*] com)
  */
 (function ($) {
-  $.fn.playlist = function () {
-    var progressBarBlock = '<div class="progressBar">' + '<div class="progress"></div>' + "</div>";
+  $.fn.playlist3 = function () {
+    var progressBar3Block = '<div class="progressBar3">' + '<div class="progress3"></div>' + "</div>";
 
     function stopAudio(audio) {
       $(".playing").removeClass("playing");
-      $(".progressBar").remove();
+      $(".progressBar3").remove();
       $(".minus").fadeOut("fast");
       audio.pause();
       audio.currentTime = 0;
@@ -30,12 +30,12 @@
 
       $(audio)
         .bind("play", function () {
-          $(audio).before(progressBarBlock);
+          $(audio).before(progressBar3Block);
           $(button).addClass("playing");
           $(minus).fadeIn("fast");
 
-          var progressBar = $(".progressBar"),
-            progress = $(".progress");
+          var progressBar3 = $(".progressBar3"),
+            progress3 = $(".progress3");
 
           $(audio).bind("timeupdate", function (e) {
             var rem = parseInt(this.duration - this.currentTime, 10),
@@ -44,14 +44,14 @@
               secs = rem - mins * 60;
 
             $(timeleft).text(mins + ":" + (secs > 9 ? secs : "0" + secs));
-            $(progress).css("width", pos + "%");
+            $(progress3).css("width", pos + "%");
           });
 
-          $(progressBar).click(function (e) {
+          $(progressBar3).click(function (e) {
             if (audio.duration != 0) {
               left = $(this).offset().left;
               offset = e.pageX - left;
-              percent = offset / progressBar.width();
+              percent = offset / progressBar3.width();
               duration_seek = percent * audio.duration;
               audio.currentTime = duration_seek;
             }

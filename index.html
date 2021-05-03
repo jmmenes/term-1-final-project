@@ -9,23 +9,26 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
 
     <!-- Index HTML CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 
     <!-- jQuery Mobile Themes CSS & JS -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="themes/Woosah.css" />
+    <link rel="stylesheet" type="text/css" href="themes/woosah.css" />
+    <link rel="stylesheet" type="text/css" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
     <!-- jQuery Music Playlist CSS & JS -->
-    <link rel="stylesheet" href="simpleplaylist.css" type="text/css" />
-    <link rel="stylesheet" href="simpleplaylist2.css" type="text/css" />
-    <link rel="stylesheet" href="simpleplaylist3.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="simpleplaylist.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="simpleplaylist2.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="simpleplaylist3.css" type="text/css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="jquery.simpleplaylist.js"></script>
     <script src="jquery.simpleplaylist2.js"></script>
     <script src="jquery.simpleplaylist3.js"></script>
+
+    <!-- API JS -->
+    <script type="text/javascript" src="api.js"></script>
   </head>
 
   <body>
@@ -33,7 +36,7 @@
     <section id="firstpage" data-role="page" data-theme="a">
       <header data-role="header">
         <h1 class="woosah">Woo Sah</h1>
-        <h1 class="refresh">Refresh Your Life</h1>
+        <h1 class="refresh"> Refresh Your Life</h1>
       </header>
 
       <div data-role="main" class="ui-content">
@@ -69,7 +72,7 @@
     <section id="secondpage" data-role="page" data-theme="b">
       <div data-role="header">
         <h1 class="woosah">Woo Sah</h1>
-        <h1 class="meditate">Meditation</h1>
+        <h1 class="meditate"> Meditation</h1>
       </div>
 
       <br />
@@ -80,6 +83,8 @@
       <h3>“To understand the immeasurable, the mind must be extraordinarily quiet, still.” – Jiddu Krishnamurti</h3>
 
       <div data-role="main" class="ui-content">
+
+         <!--JS Meditation Playlist-->
         <script type="text/javascript">
           $(document).ready(function () {
             $(".playlist").playlist();
@@ -135,7 +140,7 @@
     <section id="thirdpage" data-role="page" data-theme="c">
       <div data-role="header">
         <h1 class="woosah">Woo Sah</h1>
-        <h1 class="yoga">Yoga</h1>
+        <h1 class="yoga"> Yoga</h1>
       </div>
 
       <br />
@@ -146,6 +151,8 @@
       <h3>"Yoga is the journey of the self, through the self, to the self." - The Bhagavad Gita</h3>
 
       <div data-role="main" class="ui-content">
+
+        <!--JS Yoga Playlist-->
         <script type="text/javascript">
           $(document).ready(function () {
             $(".playlist2").playlist2();
@@ -190,6 +197,17 @@
             </audio>
           </li>
         </ul>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!--Button to Yoga 101-->
+        <form>
+          <a href="#sixthpage" data-transition="slide" class="ui-btn ui-corner-all">Yoga 101 Tutorials</a>
+        </form>
+
       </div>
 
       <div data-role="footer" data-position="fixed" class="back">
@@ -201,7 +219,7 @@
     <section id="fourthpage" data-role="page" data-theme="d">
       <div data-role="header">
         <h1 class="woosah">Woo Sah</h1>
-        <h1 class="relaxation">Relaxation</h1>
+        <h1 class="relaxation"> Relaxation</h1>
       </div>
 
       <br />
@@ -212,6 +230,8 @@
       <h3>The time to relax is when you don't have time for it. - Sydney Harris</h3>
 
       <div data-role="main" class="ui-content">
+
+        <!--JS Relaxation Playlist-->
         <script type="text/javascript">
           $(document).ready(function () {
             $(".playlist3").playlist3();
@@ -267,9 +287,9 @@
     <section id="fifthpage" data-role="page" data-dialog="true" data-theme="a">
       <div>
         <p class="thankyou">
-          Thank you for downloading Woo Sah. Our mission is to help you live a more mindful stress-free life. We've gathered a selection of carefully curated
+          Thank you for downloading Woo Sah. Our mission is to help you live a more healthy, mindful, & stress-free life. We've gathered a selection of carefully curated
           music & sounds to help you practice meditation, yoga, or to just take a deep breath & relax. After you select an activity, all you need to do is press
-          play. Enjoy.
+          play on the track you want to hear. We've also included a Yoga tutorial on the Yoga section for those who want to learn proper technique. Enjoy.
         </p>
 
         <br />
@@ -279,8 +299,45 @@
 
       <div data-role="footer" data-position="fixed">
         <a href="index.html" data-transition="flip" data-role="button">back</a>
-        <!-- Styling in CSS wasn't working. Class, ID, or just H2 !! -->
+        <!-- Styling in main CSS wasn't working. Class, ID, or just H2 -->
         <h2 style="display: inline; padding-left: 1.3em">Woo Sah. Refresh Your Life.</h2>
+      </div>
+    </section>
+
+    <!--PAGE 6 Yoga 101-->
+    <section id="sixthpage" data-role="page" data-theme="c">
+      <div data-role="header">
+        <h1 class="woosah">Woo Sah</h1>
+        <h1 class="yoga"> Yoga 101</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+
+        <form class="dropdown-form" role="form">
+          <div id="yoga-explanation">
+            <h1 class="headline">Become fluent in Yoga!</h1>
+            </div>
+            <div id="intro-background">
+            <p class="intro">
+              Yoga has over 300 known poses, each with a unique name and instruction. Choose from the list below to begin learning about some of Yoga's most beloved poses. Learn the proper name to each pose and become more flexible in life with a how-to video for each pose.
+            </p>
+            </div>
+    
+          <div class="dropdown-container">
+            <section class="results">
+            </section>
+            <div class="buttons-rel">
+              <select class="select-dropdown happy_shadow">
+              </select>
+              <button type="submit" name="button" class="ui-btn ui-corner-all" submit-button" role="button">Enter</button>
+            </div>
+          </div>
+            </form>
+   
+      </div>
+
+      <div data-role="footer" data-position="fixed" class="back">
+        <a href="index.html" data-transition="flip" data-role="button">home</a>
       </div>
     </section>
   </body>

@@ -55,3 +55,21 @@ h3 {
 .optimal {
   text-align: center;
 }
+
+/* Yoga 101 page */
+.headline {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+}
+
+#sanskrit-div {
+  text-align: center;
+  font-size: large;
+}
+
+iframe {
+  margin-bottom: 50px;
+}

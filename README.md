@@ -17,7 +17,7 @@ Purpose of app: To help people meditate, do yoga (stretch), or relax with a sele
 ## Usage
 
 The user can read an instructions pop up by clicking on a button on the mobile home page.
-The use can also just click on an activity button of their choice & just hit play on the music. The music will keep playing until the tracks are finished or stop button is pressed.
+The user can also just click on an activity button of their choice & just hit play on the music track list. The music will keep playing until the tracks are finished or the stop button is pressed.
 
 &nbsp;
 
@@ -31,6 +31,7 @@ The user can read a quick explanation. The user will then choose a yoga pose fro
 
 - HTML
 - CSS
+- Google Fonts
 - JavaScript
 - jQuery Mobile
 - jQuery

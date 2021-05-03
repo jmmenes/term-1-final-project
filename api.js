@@ -1,4 +1,3 @@
-//
 var youtube_Key = "AIzaSyBcY7xBC8qSNeUQv39-csOZ6sWqitZ1BJw";
 
 // Access Yoga JSON API

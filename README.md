@@ -29,11 +29,11 @@ The user can read a quick explanation. The user will then choose a yoga pose fro
 
 ## How It Was Built
 
-HTML
-CSS
-JavaScript
-jQuery Mobile
-jQuery
-YouTube for the music & API
-API: https://github.com/rebeccaestes/yoga_api
-VS Code
+- HTML
+- CSS
+- JavaScript
+- jQuery Mobile
+- jQuery
+- YouTube for the music & API
+- API: https://github.com/rebeccaestes/yoga_api
+- VS Code
